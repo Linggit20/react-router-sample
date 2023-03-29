@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom" // import this to stop browser to reload
 const Navbar = () => {
    const title = {name: 'LOGO', link: '/'}
    
@@ -8,14 +8,17 @@ const Navbar = () => {
       {name: 'Contact', link: '/contact'},   // THIS LINK IS THE CONTACT PAGE
    ]
 
+  
+
   return (
     <div className="container">
-      <a href={title.link}>{title.name}</a>
+      <Link to={title.link}>{title.name}</Link>
       <ul>
       {links.map((link) =>  {
          return (
          <li key={link.name}>
-            <a href={link.link}>{link.name}</a>
+            {/* this is the method */}
+            <Link to={link.link}>{link.name}</Link>   
          </li>
          )
       })}
