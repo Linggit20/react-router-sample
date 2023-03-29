@@ -1,0 +1,30 @@
+body{
+  margin: 0;
+}
+
+header{
+  background: palevioletred;
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+}
+li{
+  display: inline;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  padding: 0 8px;
+  color: white;
+  font-size: 20px;
+}
+div{
+  text-align: center;
+  font-weight: 600;
+}
